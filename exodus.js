@@ -1,16 +1,4 @@
 require('dotenv').config()
-const aoifb = require("aoi.fb")
-const firebase = aoifb.Create({
- apiKey: process.env.apiKey,
- authDomain: process.env.authDomain,
- databaseURL: process.env.databaseURL,
- projectId: process.env.projectId,
- storageBucket: process.env.storageBucket,
- messagingSenderId: process.env.messagingSenderId,
- appId: process.env.appId,
- measurementId: process.env.measurementId
-})
-
 
 const aoijs = require('aoi.js');
 const res = require("express/lib/response")
@@ -21,21 +9,9 @@ const bot = new aoijs.Bot({
   respondOnEdit:{
        commands:true,
        alwaysExecute:true, 
-       nonPrefixed:true },
- database: {
-         type: "aoi.fb",
-         db: firebase
-  }
+       nonPrefixed:true }
 });
 
-const event = require("events")
-const CustomEvent = new event.EventEmitter()
-const nevent = new aoijs.CustomEvent(bot)
-nevent.listen("name")
-nevent.command({
-listen: "name",
-code: `$channelSendMessage[831502859597119518;{newEmbed: {color:$getVar[color]}{description:**$userName[$eventData[[0]]]**, Thanks for voting! Rewards have been sent to your wallet.}} <@$eventData[[0]]>]`
-})
 bot.status({
  text: "Apex Legends!",
  type: "PLAYING",
