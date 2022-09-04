@@ -1,15 +1,4 @@
 require('dotenv').config()
-const aoifb = require("aoi.fb")
-const firebase = aoifb.Create({
- apiKey: process.env.apiKey,
- authDomain: process.env.authDomain,
- databaseURL: process.env.databaseURL,
- projectId: process.env.projectId,
- storageBucket: process.env.storageBucket,
- messagingSenderId: process.env.messagingSenderId,
- appId: process.env.appId,
- measurementId: process.env.measurementId
-})
 
 
 const aoijs = require('aoi.js');
@@ -21,11 +10,7 @@ const bot = new aoijs.Bot({
   respondOnEdit:{
        commands:true,
        alwaysExecute:true, 
-       nonPrefixed:true },
- database: {
-         type: "aoi.fb",
-         db: firebase
-  }
+       nonPrefixed:true }
 });
 
 const event = require("events")
