@@ -1,9 +1,4 @@
 require('dotenv').config()
-<<<<<<< HEAD
-=======
-
->>>>>>> 34f58cbf7a7373f724f3469bcc07ebf26021dbbe
-
 const aoijs = require('aoi.js');
 const res = require("express/lib/response")
 const bot = new aoijs.Bot({
