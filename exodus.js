@@ -1,4 +1,16 @@
 require('dotenv').config()
+const aoifb = require("aoi.fb")
+const firebase = aoifb.Create({
+ apiKey: process.env.apikey,
+ authDomain: process.env.authdomain,
+ databaseURL: process.env.databaseurl,
+ projectId: process.env.projectID,
+ storageBucket: process.env.storagebucket,
+ messagingSenderId: process.env.messagingsenderid,
+ appId: process.env.appid,
+ measurementId: process.env.measurementid
+})
+
 const aoijs = require('aoi.js');
 const res = require("express/lib/response")
 const bot = new aoijs.Bot({
