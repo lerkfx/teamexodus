@@ -1,13 +1,13 @@
 const aoifb = require("aoi.fb")
 const firebase = aoifb.Create({
- apiKey: process.env.apikey,
- authDomain: process.env.authdomain,
- databaseURL: process.env.databaseurl,
- projectId: process.env.projectID,
- storageBucket: process.env.storagebucket,
- messagingSenderId: process.env.messagingsenderid,
- appId: process.env.appid,
- measurementId: process.env.measurementid
+ apiKey: process.env.apiKey,
+ authDomain: process.env.authDomain,
+ databaseURL: process.env.databaseURL,
+ projectId: process.env.projectId,
+ storageBucket: process.env.storageBucket,
+ messagingSenderId: process.env.messagingSenderId,
+ appId: process.env.appId,
+ measurementId: process.env.measurementId
 })
 
 const express = require('express')
