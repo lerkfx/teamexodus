@@ -55,7 +55,7 @@ bot.status({
 })
 const voice = new aoijs.Voice(bot, {
  soundcloud: {
-   clientId: "aG2FjTwcYv7xe1bZELqpOtGOTMSDQ1Bj",
+   clientId: process.env.sclientid,
  },
  cache: {
    cacheType: "Memory",
