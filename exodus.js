@@ -20,7 +20,11 @@ const bot = new aoijs.Bot({
   respondOnEdit:{
        commands:true,
        alwaysExecute:true, 
-       nonPrefixed:true }
+       nonPrefixed:true },
+  database: {
+               type: "aoi.fb",
+               db: firebase
+  }
 });
 
 bot.status({
