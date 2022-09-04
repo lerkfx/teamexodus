@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "@akarui/aoi.music": "github:akaruidevelopment/music#main",
-    "aoi.fb": "^5.7.0",
     "aoi.js": "^5.5.5",
     "dotenv": "^16.0.2",
     "express": "^4.17.3"
