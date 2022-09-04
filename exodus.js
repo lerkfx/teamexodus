@@ -1,4 +1,3 @@
-require('dotenv').config()
 const aoifb = require("aoi.fb")
 const firebase = aoifb.Create({
  apiKey: process.env.apikey,
@@ -11,39 +10,49 @@ const firebase = aoifb.Create({
  measurementId: process.env.measurementid
 })
 
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 8080
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
 const aoijs = require('aoi.js');
 const res = require("express/lib/response")
 const bot = new aoijs.Bot({
   token: process.env.token,
-  prefix: "+",
+  prefix: ["$getServerVar[prefix]"],
   intents: "all",
   respondOnEdit:{
        commands:true,
        alwaysExecute:true, 
        nonPrefixed:true },
-  database: {
-               type: "aoi.fb",
-               db: firebase
+ database: {
+         type: "aoi.fb",
+         db: firebase
   }
 });
-
 bot.status({
- text: "Apex Legends!",
- type: "PLAYING",
- status: "idle",
- time: 12
+  text: "+help!",
+  type: "LISTENING",
+  status: "idle",
+  time: 12
 })
-const express = require('express')
-
-const app = express()
-
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+bot.status({
+  text: "$userTag[$botOwnerID]!",
+  type: "LISTENING",
+  status: "idle",
+  time: 12
 })
-
-
-app.listen(process.env.PORT)
-
+bot.status({
+  text: "$sub[$allMembersCount;3] members!",
+  type: "WATCHING",
+  status: "idle",
+  time: 12
+})
 const voice = new aoijs.Voice(bot, {
  soundcloud: {
    clientId: "aG2FjTwcYv7xe1bZELqpOtGOTMSDQ1Bj",

@@ -1,16 +1,25 @@
 {
   "dependencies": {
     "@akarui/aoi.music": "github:akaruidevelopment/music#main",
-    "aoi.js": "^5.5.5",
+    "@akarui/aoi.panel": "^0.0.1",
     "aoi.fb": "^5.7.0",
-    "dotenv": "^16.0.2",
-    "express": "^4.17.3"
+    "aoi.js": "^5.5.5",
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "fs": "^0.0.1-security",
+    "random-reddit": "^2.0.3"
   },
   "name": "exodus",
   "version": "1.0.0",
   "main": "exodus.js",
   "scripts": {
     "start": "node exodus.js"
+  },
+  "engines": {
+    "node": "16.x"
   },
   "keywords": [
     "Exodus",
@@ -20,5 +29,5 @@
   ],
   "author": "AsheyXD#6106",
   "license": "ISC",
-  "description": ""
+  "description": "L"
 }
