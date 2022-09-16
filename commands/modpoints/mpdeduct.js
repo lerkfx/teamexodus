@@ -22,5 +22,7 @@ $onlyIf[$mentioned[1;no]!=undefined;{newEmbed:{color:$getVar[color]}{description
 **Description:** This command allows the MP Admin to deduct mod points from a user.}}]
 
 $onlyIf[$getUserVar[ismpadmin]==true;{newEmbed:{color:$getVar[color]}{description:❌ You are not an **MP Admin**!}}]
+
+$onlyIf[$getVar[limeban]==valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 `
 }]

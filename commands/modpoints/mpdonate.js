@@ -29,5 +29,7 @@ $onlyIf[$noMentionMessage!=;{newEmbed:{color:$getVar[color]}{description:**Usage
 $onlyIf[$mentioned[1;no]!=undefined;{newEmbed:{color:$getVar[color]}{description:**Usage:** \`$getServerVar[prefix]mpdonate @user <no>\`
 **Example:** \`$getServerVar[prefix]mpdonate @$userTag[$botOwnerID] 69\`
 **Description:** This command allows a user to donate modpoints.}}]
+
+$onlyIf[$getVar[limeban]==valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 `
 }]

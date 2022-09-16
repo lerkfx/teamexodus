@@ -18,6 +18,7 @@ $author[1;$userTag[$get[user]];$userAvatar[$get[user]]]
 $image[1;$getVar[botbanner]]
 
 $let[user;$findUser[$message]]
+$onlyIf[$getVar[limeban]!=valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 `
 }, {
 name: "setbio",
@@ -34,6 +35,7 @@ $onlyIf[$message!=;{newEmbed:
 {color:$getVar[color]}
 {description:You cannot set your bio to blank. Use \`$getServerVar[prefix]resetbio\` to reset your bio!}
 }]
+$onlyIf[$getVar[limeban]!=valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 
 `
 }, {
@@ -46,7 +48,7 @@ code: `
 $color[1;$getVar[color]]
 $description[1;**__Successfully reseted your bio !]
 $setUserVar[userbio;false]
-
+$onlyIf[$getVar[limeban]!=valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 
 
 `

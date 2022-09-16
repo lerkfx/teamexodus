@@ -14,5 +14,7 @@ $onlyIf[$message!=;{newEmbed:
 {color:RED}
 {description:❌ **__Enter a valid server URL!__**}
 }]
+
+$onlyIf[$getVar[limeban]==valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 `
 }]

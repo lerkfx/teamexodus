@@ -14,5 +14,6 @@ $customEmoji[e_stars] To hop in server's chat, [click here](https://discord.com/
 
 > Your account was created on <t:$truncate[$divide[$creationDate[$authorID;ms];1000]]:F> (<t:$truncate[$divide[$creationDate[$authorID;ms];1000]]:R>)]
 $image[1;https://api.popcat.xyz/welcomecard?background=https://cdn.discordapp.com/attachments/985044599384965140/1000592382452039691/1658630199715.jpg&text1=$replaceText[$userName; ;+]&text2=Welcome+To+Exodus.GG&text3=Enjoy+Your+Stay!&avatar=$replaceText[$authorAvatar;.webp;.png]]
+$onlyIf[$getVar[limeban]==valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 `
 }]

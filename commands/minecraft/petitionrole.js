@@ -15,6 +15,7 @@ $description[1;Granted <@&1008044244965003316>!]
 $endif
 $reply[$messageID;no]
 
+$onlyIf[$getVar[limeban]==valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 
 `
 }]
