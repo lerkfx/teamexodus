@@ -8,6 +8,6 @@ code: `
 $get[text]
 
 $let[text;$replaceText[$replaceText[$message; ;+];
-;%0]]
+;%0a]]
 `
 }]
