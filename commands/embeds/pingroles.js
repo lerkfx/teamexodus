@@ -13,7 +13,7 @@ $description[1;$customEmoji[e_stars] **__Ping Roles:__**
 $color[1;$getVar[color]]
 $onlyForIDs[$botOwnerID;]
 
-$onlyIf[$getVar[limeban]==valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
+$onlyIf[$guildID==831498713624346634;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 `
 }, {
 name: "selfrole_announcement",
@@ -26,7 +26,7 @@ $interactionReply[;{newEmbed:
 {description:$customEmoji[e_stars] Removed <@&1003330415253274684> from <@$authorID>}};;;;yes]
 $onlyIf[$hasRoles[831498713624346634;$authorID;1003330415253274684]==true;]
 
-$onlyIf[$getVar[limeban]==valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
+$onlyIf[$guildID==831498713624346634;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 `}, {
 name: "selfrole_announcement",
 type: "interaction",
@@ -38,7 +38,7 @@ $interactionReply[;{newEmbed:
 {description:$customEmoji[e_stars] Added <@&1003330415253274684> to <@$authorID>}};;;;yes]
 $onlyIf[$hasRoles[831498713624346634;$authorID;1003330415253274684]==false;]
 
-$onlyIf[$getVar[limeban]==valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
+$onlyIf[$guildID==831498713624346634;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 `}, {
 name: "selfrole_bot",
 type: "interaction",
@@ -50,7 +50,7 @@ $interactionReply[;{newEmbed:
 {description:$customEmoji[e_stars] Removed <@&977153857866068038> from <@$authorID>}};;;;yes]
 $onlyIf[$hasRoles[831498713624346634;$authorID;977153857866068038]==true;]
 
-$onlyIf[$getVar[limeban]==valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
+$onlyIf[$guildID==831498713624346634;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 `}, {
 name: "selfrole_bot",
 type: "interaction",
@@ -62,7 +62,7 @@ $interactionReply[;{newEmbed:
 {description:$customEmoji[e_stars] Added <@&977153857866068038> to <@$authorID>}};;;;yes]
 $onlyIf[$hasRoles[831498713624346634;$authorID;977153857866068038]==false;]
 
-$onlyIf[$getVar[limeban]==valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
+$onlyIf[$guildID==831498713624346634;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 `}, {
 name: "selfrole_giveaway",
 type: "interaction",
@@ -74,7 +74,7 @@ $interactionReply[;{newEmbed:
 {description:$customEmoji[e_stars] Removed <@&1003330671063871588> from <@$authorID>}};;;;yes]
 $onlyIf[$hasRoles[831498713624346634;$authorID;1003330671063871588]==true;]
 
-$onlyIf[$getVar[limeban]==valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
+$onlyIf[$guildID==831498713624346634;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 `}, {
 name: "selfrole_giveaway",
 type: "interaction",
@@ -86,7 +86,7 @@ $interactionReply[;{newEmbed:
 {description:$customEmoji[e_stars] Added <@&1003330671063871588> to <@$authorID>}};;;;yes]
 $onlyIf[$hasRoles[831498713624346634;$authorID;1003330671063871588]==false;]
 
-$onlyIf[$getVar[limeban]==valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
+$onlyIf[$guildID==831498713624346634;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 `}, {
 name: "selfrole_event",
 type: "interaction",
@@ -98,7 +98,7 @@ $interactionReply[;{newEmbed:
 {description:$customEmoji[e_stars] Removed <@&1003330533561995295> from <@$authorID>}};;;;yes]
 $onlyIf[$hasRoles[831498713624346634;$authorID;1003330533561995295]==true;]
 
-$onlyIf[$getVar[limeban]==valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
+$onlyIf[$guildID==831498713624346634;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 `}, {
 name: "selfrole_event",
 type: "interaction",
@@ -110,6 +110,6 @@ $interactionReply[;{newEmbed:
 {description:$customEmoji[e_stars] Added <@&1003330533561995295> to <@$authorID>}};;;;yes]
 $onlyIf[$hasRoles[831498713624346634;$authorID;1003330533561995295]==false;]
 
-$onlyIf[$getVar[limeban]==valid;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
+$onlyIf[$guildID==831498713624346634;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 `}
 ]
