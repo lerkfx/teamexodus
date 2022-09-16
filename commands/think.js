@@ -7,7 +7,7 @@ code: `
 
 $get[text]
 
-$let[text;$replaceText[$replaceText[$message; ;%20];
+$let[text;$replaceText[$replaceText[$message; ;+];
 ;%0]]
 `
 }]
