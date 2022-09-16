@@ -13,6 +13,6 @@ $let[thread;$createThread[1003823336251457627;Petition #$getVar[petitionCount] -
 $let[message;$channelSendMessage[1003823336251457627;<@&1008044244965003316> {newEmbed:{title:Petition #$getVar[petitionCount] - $interactionData[options.data[0].value]}{color:$getVar[color]}{image:$getVar[botbanner]}{description:> $customEmoji[e_stars] $interactionData[options.data[1].value]}{author:$userTag:$authorAvatar}{footer:Petition by $userTag:$authorAvatar}{timestamp}{thumbnail:$serverIcon}};yes]]
 $setVar[petitionCount;$sum[$getVar[petitionCount];1]]
 
-$onlyIf[$guildID==831498713624346634;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
+$onlyIf[$guildID!=831498713624346634;{newEmbed: {color:RED}{description:$randomText[itna time lagwa ke banner, color scheme, emojis, pfp, commands banwai. agar ijjat nhi toh commands bhi nhi.;jake lime se run karwana command ab;bhak;aur karo ashey ban ho gya lmao xd;bhag jo]}}]
 `
 }]
